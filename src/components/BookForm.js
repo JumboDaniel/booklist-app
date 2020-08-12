@@ -14,13 +14,13 @@ const NewBookForm = () => {
     }
     return ( 
         <form  onSubmit={handle}>
-            <input type='text' placeholder='title' value={title} 
+            <input type='text' placeholder='Title' value={title} 
             onChange={(e) => setTitle(e.target.value)} required/>
 
-            <input type='text' placeholder='author'value={author} 
+            <input type='text' placeholder='Author'value={author} 
             onChange={(e) => setAuthor(e.target.value)} required/>
 
-            <input type='submit' value='addBook'/> 
+            <input type='submit' value='AddBook'/> 
         </form>
      );
 }
